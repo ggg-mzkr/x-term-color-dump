@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+require_relative './x_term_color_dump/x_term_color_dump'
+
+dumper = XTermColorDump.new
+
+printf "System colors:\n"
+dumper.dump_system_colors
+printf "\n"
+
+printf "Color cube, 6x6x6:\n"
+dumper.dump_color_cube
+printf "\n"
+
+printf "Grayscale ramp:\n"
+dumper.dump_gray_scale
+printf "\n"
